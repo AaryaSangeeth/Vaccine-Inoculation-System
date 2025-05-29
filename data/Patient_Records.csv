@@ -1,0 +1,11 @@
+Patient_ID,Name,Vaccine, Doses_Taken, Status 
+123098, Meera, Pfizer, 1 , Partially-Vaccincated
+123966, Andrew, Tetanus,1, Vaccinated
+12345,Aarya,Tetanus,1,Partially Vaccinated
+0989876,Bryan,Tetanus,1,Partially Vaccinated
+00098976,Nicole,HPV,1,Fully Vaccinated
+556789,Alexandra,Measles,3,Fully Vaccinated
+7654321,Melissa,Pfizer,1,Partially Vaccinated
+1290899,Aurora,Measles,0,Unvaccinated
+129999,Luke,Tetanus,0,Unvaccinated
+
