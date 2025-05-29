@@ -6,6 +6,7 @@
 
 
 
+
 ### Data Handling:
 
 - The files are updated automatically based on the role chosen by the user :
@@ -16,7 +17,8 @@
 
 
 
-### Vaccine Stock Management 
+
+### Vaccine Stock Management:
 
 - All Vaccine stock data is currently hardcoded to be part of a mapping in Class Vaccine for easy access.
 - The Staff class reduces the vaccine stock when a dose is administered, using the Vaccine::stock map. 
