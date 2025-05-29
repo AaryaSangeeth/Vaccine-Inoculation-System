@@ -3,3 +3,19 @@ The vaccine inoculation system is designed and tailored in order to  streamline 
 
 
 The system is divided into four main components: Patient Management, Admin Module, Staff Module, and Vaccine Management, each implemented using OOP concepts like inheritance, polymorphism, encapsulation, and class friendship
+
+
+## How to Compile and Run
+
+### Compiling 
+
+Using g++:
+g++ src/user.cpp -o user
+
+### Executing 
+
+Run the executable : 
+./user 
+
+
+
