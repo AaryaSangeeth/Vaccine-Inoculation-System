@@ -22,23 +22,18 @@ The system is divided into four main components: Patient Management, Admin Modul
 
 ## Important 
 
-Admin Password harcoded to currently be 
+* Admin Password is harcoded to currently be 12345. ( Can be modified in 'Admin.cpp')
+* Staff login is verfied by cross-referencing entered  ID with current list in 'Staff.csv' ( additional entries can be added to 'Staff.csv')
 
-
-
-
-Current Stock for each Vaccine, can be modified later :
-map<string, int> Vaccine::stock =
-{
-    {"Pfizer", 12000},
-    {"Moderna", 19222},
-    {"AstraZeneca", 12000},
-    {"Tetanus", 35000},
-    {"Diphtheria", 2000},
-    {"Measles", 90888},
-    {"Chickenpox", 9099},
-    {"HPV", 1000}
-};
+* Current Stock for each Vaccine, can be modified later in Vaccine.cpp :  
+    Pfizer : 12000  
+    Moderna : 19222  
+    AstraZeneca : 12000  
+    Tetanus : 35000  
+    Diphtheria : 2000  
+    Measles : 90888  
+    Chickenpox : 9099  
+    HPV : 1000  
 
 
 
