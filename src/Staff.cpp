@@ -15,7 +15,7 @@ Staff::Staff(string id ){
 bool Staff::log_in( const string id) 
 {
     ifstream inFile;
-    inFile.open("Staff_IDs.csv");
+    inFile.open("/data/Staff_IDs.csv");
     string data;
 
     while (inFile>>data) //Reading IDs 
@@ -81,7 +81,7 @@ void Staff::updateRecord(Patient* patient_ref)
 
     //Rewriting data onto file 
     ifstream infile;
-    infile.open("Patient_Records.csv");
+    infile.open("/data/Patient_Records.csv");
     vector<string> lines;
     string line;
 
@@ -120,7 +120,7 @@ void Staff::updateRecord(Patient* patient_ref)
 
     // Writing the modified content back to the file
     if (updated) {
-        ofstream outfile("Patient_Records.csv", ios::trunc);
+        ofstream outfile("/data/Patient_Records.csv", ios::trunc);
         for (const string& updated_line : lines) {
             outfile << updated_line << endl;
         }
