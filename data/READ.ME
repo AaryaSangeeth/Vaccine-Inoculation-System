@@ -1,1 +1,13 @@
+### Files:
 
+- `patient_data.txt`: Stores patient registration details, including Emirates ID, name, and vaccine status.
+- `vaccine_log.txt`: Records vaccination history logged by staff.
+- `admin_config.txt`: (Optional) Stores hashed admin password or system settings.
+
+### Data Handling:
+
+- The files are updated automatically based on actions performed by each user type:
+  - **Patients** add their data during registration.
+  - **Staff** can update vaccination records.
+  - **Admins** may reset or export data.
+- All file I/O uses basic C++ file streams (`fstream`, `ifstream`, `ofstream`).
