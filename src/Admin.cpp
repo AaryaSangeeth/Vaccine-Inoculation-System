@@ -21,7 +21,7 @@ bool Admin::log_in( string user_passwd) {
 void Admin::view_data()
 {
     ifstream inFile;
-    inFile.open("Patient_Records.csv");
+    inFile.open("/data/Patient_Records.csv");
     cout<<"---------------------------------------------------------------------------------------"<<endl;
     string line;
     cout<<"CURRENT PATIENT RECORDS :\n\n";
@@ -67,7 +67,7 @@ void Admin::appointments()
         ptr->setAppointment(date,time);
 
         //Writing new appointment to csv file 
-        ptr->record_appointment("Appointments.csv");    //problem is calling record in both cases : need to only change in this case 
+        ptr->record_appointment("/data/Appointments.csv");    //problem is calling record in both cases : need to only change in this case 
  
 
     }
@@ -83,7 +83,7 @@ void Admin::appointments()
         new_ptr->setAppointment(date,time);
 
         //Writing new appointment to csv file 
-        new_ptr->record_appointment("Appointments.csv");
+        new_ptr->record_appointment("/data/Appointments.csv");
     }
 
     return;
