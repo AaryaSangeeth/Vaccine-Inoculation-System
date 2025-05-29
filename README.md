@@ -20,6 +20,28 @@ The system is divided into four main components: Patient Management, Admin Modul
 
 
 
+## Important 
+
+Admin Password harcoded to currently be 
+
+
+
+
+Current Stock for each Vaccine, can be modified later :
+map<string, int> Vaccine::stock =
+{
+    {"Pfizer", 12000},
+    {"Moderna", 19222},
+    {"AstraZeneca", 12000},
+    {"Tetanus", 35000},
+    {"Diphtheria", 2000},
+    {"Measles", 90888},
+    {"Chickenpox", 9099},
+    {"HPV", 1000}
+};
+
+
+
 ## How to Compile and Run
 
 ### Compiling 
