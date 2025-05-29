@@ -27,7 +27,7 @@ void Patient::add_to_mapping(){
         cout<<"Error in Opening File ! Make sure it exists or if file name is correct !\n";
     }
     else {
-        inFile.open("Patient_Records.csv");
+        inFile.open("/data/Patient_Records.csv");
         string line;
 
         // Skiping the header line
@@ -66,7 +66,7 @@ void Patient::add_to_mapping(){
 
 //Reading pre-exisitng appointment records from "Appointment.csv" and updating patient information 
 void Patient::update_appointments() {
-    ifstream appFile("Appointments.csv");
+    ifstream appFile("/data/Appointments.csv");
     if (!appFile) {
         cout << "Error in Opening Appointments.csv! Make sure it exists or if the file name is correct!\n";
     }
@@ -192,7 +192,7 @@ void Patient::record_appointment(const string& fname)
 void Patient::register_patient(Patient* patient_ref)
 {
     ofstream appFile;
-    appFile.open("Patient_Records.csv", ios::app); //opening file in append mode 
+    appFile.open("/data/Patient_Records.csv", ios::app); //opening file in append mode 
     if (!appFile)
     {
         cout<<"Error ! Cannot Open File "<<endl;
